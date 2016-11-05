@@ -1,0 +1,34 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'com.jfrog.bintray'
+apply plugin: 'maven'
+apply plugin: 'maven-publish'
+
+group 'Guild'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7'
+    }
+}
+
+repositories {
+    jcenter()
+}
+
+
+def defaultEncoding = 'UTF-8'
+compileJava {
+    options.encoding = defaultEncoding
+}
+
+dependencies {
+}
