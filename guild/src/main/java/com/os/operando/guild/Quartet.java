@@ -5,25 +5,25 @@ package com.os.operando.guild;
  *
  * @param <F>  first element type
  * @param <S>  second element type
- * @param <T>  thread element type
+ * @param <T>  third element type
  * @param <FO> fourth element type
  */
 public class Quartet<F, S, T, FO> {
 
     private final F first;
     private final S second;
-    private final T thread;
+    private final T third;
     private final FO fourth;
 
-    private Quartet(final F first, final S second, final T thread, final FO fourth) {
+    private Quartet(final F first, final S second, final T third, final FO fourth) {
         this.first = first;
         this.second = second;
-        this.thread = thread;
+        this.third = third;
         this.fourth = fourth;
     }
 
-    public static <F, S, T, FO> Quartet<F, S, T, FO> create(F first, S second, T thread, FO fourth) {
-        return new Quartet<>(first, second, thread, fourth);
+    public static <F, S, T, FO> Quartet<F, S, T, FO> create(F first, S second, T third, FO fourth) {
+        return new Quartet<>(first, second, third, fourth);
     }
 
     public F getFirst() {
@@ -34,8 +34,8 @@ public class Quartet<F, S, T, FO> {
         return second;
     }
 
-    public T getThread() {
-        return thread;
+    public T getThird() {
+        return third;
     }
 
     public FO getFourth() {

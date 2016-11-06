@@ -17,12 +17,12 @@ public class Main {
         Triplet<String, Integer, Boolean> triplet = Triplet.create("triplet", 0, false);
         System.out.println(triplet.getFirst());
         System.out.println(triplet.getSecond());
-        System.out.println(triplet.getThread());
+        System.out.println(triplet.getThird());
 
         Quartet<String, Integer, Boolean, LocalDate> quartet = Quartet.create("triplet", 0, false, LocalDate.now());
         System.out.println(quartet.getFirst());
         System.out.println(quartet.getSecond());
-        System.out.println(quartet.getThread());
+        System.out.println(quartet.getThird());
         System.out.println(quartet.getFourth());
     }
 }
