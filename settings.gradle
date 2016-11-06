@@ -1,3 +1,4 @@
 rootProject.name = 'Guild'
+include 'sample'
 include 'guild'
 
