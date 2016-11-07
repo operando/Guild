@@ -51,7 +51,7 @@ System.out.println(triplet.getThird());
 ### Quartet
 
 ```java
-Quartet<String, Integer, Boolean, LocalDate> quartet = Quartet.create("triplet", 0, false, LocalDate.now());
+Quartet<String, Integer, Boolean, LocalDate> quartet = Quartet.create("quartet", 0, false, LocalDate.now());
 System.out.println(quartet.getFirst());
 System.out.println(quartet.getSecond());
 System.out.println(quartet.getThird());
