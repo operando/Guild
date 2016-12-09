@@ -1,4 +1,5 @@
 rootProject.name = 'Guild'
 include 'sample'
 include 'guild'
+include 'guild-kotlin'
 
