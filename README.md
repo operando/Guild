@@ -10,6 +10,8 @@ Guild offers you tuple classes from two to four elements.
  * A tuple of three elements.
 * [Quartet](https://github.com/operando/Guild/blob/master/guild/src/main/java/com/os/operando/guild/Quartet.java)
  * A tuple of four elements.
+* [Quintet](https://github.com/operando/Guild/blob/master/guild/src/main/java/com/os/operando/guild/Quintet.java)
+ * A tuple of five elements.
 
 ## Download
 
@@ -56,6 +58,17 @@ System.out.println(quartet.getFirst());
 System.out.println(quartet.getSecond());
 System.out.println(quartet.getThird());
 System.out.println(quartet.getFourth());
+```
+
+### Quintet
+
+```java
+Quintet<String, Integer, Boolean, LocalDate, List<String>> quintet = Quintet.create("quintet", 0, false, LocalDate.now(), Arrays.asList("quintet"));
+System.out.println(quintet.getFirst());
+System.out.println(quintet.getSecond());
+System.out.println(quintet.getThird());
+System.out.println(quintet.getFourth());
+System.out.println(quintet.getFive());
 ```
 
 ## Future
