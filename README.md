@@ -15,7 +15,7 @@ Guild offers you tuple classes from two to four elements.
 
 ## Download
 
-[![Download](https://api.bintray.com/packages/operandoos/maven/guild/images/download.svg?version=1.0.0) ](https://bintray.com/operandoos/maven/guild/1.0.0/link) or grab via Gradle:
+[![Download](https://api.bintray.com/packages/operandoos/maven/guild/images/download.svg?version=1.1.0) ](https://bintray.com/operandoos/maven/guild/1.1.0/link) or grab via Gradle:
 
 ```gradle
 compile 'com.os.operando.guild:guild:1.1.0'
