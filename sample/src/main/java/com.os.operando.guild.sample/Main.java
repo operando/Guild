@@ -3,11 +3,14 @@ package com.os.operando.guild.sample;
 import com.os.operando.guild.Pair;
 import com.os.operando.guild.Quartet;
 import com.os.operando.guild.Quintet;
+import com.os.operando.guild.Sextet;
 import com.os.operando.guild.Triplet;
 
 import java.time.LocalDate;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
+import java.util.Set;
 
 public class Main {
 
@@ -34,5 +37,14 @@ public class Main {
         System.out.println(quintet.getThird());
         System.out.println(quintet.getFourth());
         System.out.println(quintet.getFive());
+
+        Sextet<String, Integer, Boolean, LocalDate, List<String>, Set<String>> sextet =
+                Sextet.create("sextet", 0, false, LocalDate.now(), Arrays.asList("sextet"), Collections.singleton("sextet"));
+        System.out.println(sextet.getFirst());
+        System.out.println(sextet.getSecond());
+        System.out.println(sextet.getThird());
+        System.out.println(sextet.getFourth());
+        System.out.println(sextet.getFive());
+        System.out.println(sextet.getSix());
     }
 }
