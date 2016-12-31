@@ -14,23 +14,12 @@ package com.os.operando.guild
  * @property fourth Fourth value
  * @property five Five value
  */
-class Quintet<out F, out S, out T, out FO, out FI>(
+data class Quintet<out F, out S, out T, out FO, out FI>(
         val first: F,
         val second: S,
         val third: T,
         val fourth: FO,
         val five: FI) {
-
-    override fun toString(): String {
-        return "Quintet(first=$first, second=$second, third=$third, fourth=$fourth, five=$five)"
-    }
-
-    companion object {
-        @JvmStatic
-        fun <F, S, T, FO, FI> create(first: F, second: S, third: T, fourth: FO, five: FI): Quintet<F, S, T, FO, FI> {
-            return Quintet(first, second, third, fourth, five)
-        }
-    }
 }
 
 infix fun <A, B, C, D, E, F> Quintet<A, B, C, D, E>.to(that: F): Sextet<A, B, C, D, E, F> = Sextet(this.first, this.second, this.third, this.fourth, this.five, that)
