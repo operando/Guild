@@ -12,6 +12,8 @@ Guild offers you tuple classes from two to four elements.
  * A tuple of four elements.
 * [Quintet](https://github.com/operando/Guild/blob/master/guild/src/main/java/com/os/operando/guild/Quintet.java)
  * A tuple of five elements.
+* [Sextet](https://github.com/operando/Guild/blob/master/guild/src/main/java/com/os/operando/guild/Sextet.java)
+ * A tuple of six elements.
 
 ## Download
 
@@ -69,6 +71,19 @@ System.out.println(quintet.getSecond());
 System.out.println(quintet.getThird());
 System.out.println(quintet.getFourth());
 System.out.println(quintet.getFive());
+```
+
+### Sextet
+
+```java
+Sextet<String, Integer, Boolean, LocalDate, List<String>, Set<String>> sextet =
+    Sextet.create("sextet", 0, false, LocalDate.now(), Arrays.asList("sextet"), Collections.singleton("sextet"));
+System.out.println(sextet.getFirst());
+System.out.println(sextet.getSecond());
+System.out.println(sextet.getThird());
+System.out.println(sextet.getFourth());
+System.out.println(sextet.getFive());
+System.out.println(sextet.getSix());
 ```
 
 ## Future
