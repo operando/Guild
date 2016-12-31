@@ -25,4 +25,12 @@ fun main(args: Array<String>) {
     println(quintet.third)
     println(quintet.fourth)
     println(quintet.five)
+
+    val sextet = 1 to 10L to true to LocalDateTime.now() to "sextet" to listOf("sextet")
+    println(sextet.first)
+    println(sextet.second)
+    println(sextet.third)
+    println(sextet.fourth)
+    println(sextet.five)
+    println(sextet.six)
 }

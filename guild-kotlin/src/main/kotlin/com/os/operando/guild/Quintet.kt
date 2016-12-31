@@ -32,3 +32,5 @@ class Quintet<out F, out S, out T, out FO, out FI>(
         }
     }
 }
+
+infix fun <A, B, C, D, E, F> Quintet<A, B, C, D, E>.to(that: F): Sextet<A, B, C, D, E, F> = Sextet(this.first, this.second, this.third, this.fourth, this.five, that)
