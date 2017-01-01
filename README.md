@@ -17,10 +17,10 @@ Guild offers you tuple classes from two to four elements.
 
 ## Download
 
-[![Download](https://api.bintray.com/packages/operandoos/maven/guild/images/download.svg?version=1.2.0) ](https://bintray.com/operandoos/maven/guild/1.2.0/link) or grab via Gradle:
+[![Download](https://api.bintray.com/packages/operandoos/maven/guild/images/download.svg?version=1.3.0) ](https://bintray.com/operandoos/maven/guild/1.3.0/link) or grab via Gradle:
 
 ```gradle
-compile 'com.os.operando.guild:guild:1.2.0'
+compile 'com.os.operando.guild:guild:1.3.0'
 ```
 
 or Maven:
@@ -29,7 +29,7 @@ or Maven:
 <dependency>
   <groupId>com.os.operando.guild</groupId>
   <artifactId>guild</artifactId>
-  <version>1.2.0</version>
+  <version>1.3.0</version>
 </dependency>
 ```
 
