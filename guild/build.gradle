@@ -25,6 +25,11 @@ compileJava {
     options.encoding = defaultEncoding
 }
 
+dependencies {
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.hamcrest:hamcrest-library:1.3'
+}
+
 group = 'com.os.operando.guild'
 version = '1.4.0'
 
