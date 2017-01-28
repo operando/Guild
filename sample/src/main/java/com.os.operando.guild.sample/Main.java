@@ -1,10 +1,6 @@
 package com.os.operando.guild.sample;
 
-import com.os.operando.guild.Pair;
-import com.os.operando.guild.Quartet;
-import com.os.operando.guild.Quintet;
-import com.os.operando.guild.Sextet;
-import com.os.operando.guild.Triplet;
+import com.os.operando.guild.*;
 
 import java.time.LocalDate;
 import java.util.Arrays;
@@ -46,5 +42,15 @@ public class Main {
         System.out.println(sextet.getFourth());
         System.out.println(sextet.getFive());
         System.out.println(sextet.getSix());
+
+        Septet<String, Integer, Boolean, LocalDate, List<String>, Set<String>, Long> septet =
+                Septet.create("septet", 0, false, LocalDate.now(), Arrays.asList("septet"), Collections.singleton("septet"), Long.MAX_VALUE);
+        System.out.println(septet.getFirst());
+        System.out.println(septet.getSecond());
+        System.out.println(septet.getThird());
+        System.out.println(septet.getFourth());
+        System.out.println(septet.getFive());
+        System.out.println(septet.getSix());
+        System.out.println(septet.getSeven());
     }
 }

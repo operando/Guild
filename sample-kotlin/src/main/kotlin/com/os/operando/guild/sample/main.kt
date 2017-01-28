@@ -33,4 +33,13 @@ fun main(args: Array<String>) {
     println(sextet.fourth)
     println(sextet.five)
     println(sextet.six)
+
+    val septet = 1 to 10L to true to LocalDateTime.now() to "septet" to listOf("septet") to Long.MAX_VALUE
+    println(septet.first)
+    println(septet.second)
+    println(septet.third)
+    println(septet.fourth)
+    println(septet.five)
+    println(septet.six)
+    println(septet.seven)
 }

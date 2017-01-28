@@ -1,7 +1,7 @@
 package com.os.operando.guild
 
 /**
- * A tuple of six elements.
+ * A tuple of seven elements.
  *
  * @param F  first element type
  * @param S  second element type
@@ -9,21 +9,21 @@ package com.os.operando.guild
  * @param FO fourth element type
  * @param FI five element type
  * @param SI six element type
+ * @param SE seven element type
  * @property first First value
  * @property second Second value
  * @property third Third value
  * @property fourth Fourth value
  * @property five Five value
  * @property six Six value
+ * @property seven Seven value
  */
-data class Sextet<out F, out S, out T, out FO, out FI, out SI>(
+data class Septet<out F, out S, out T, out FO, out FI, out SI, out SE>(
         val first: F,
         val second: S,
         val third: T,
         val fourth: FO,
         val five: FI,
-        val six: SI) {
+        val six: SI,
+        val seven: SE) {
 }
-
-infix fun <A, B, C, D, E, F, G> Sextet<A, B, C, D, E, F>.to(that: G): Septet<A, B, C, D, E, F, G>
-        = Septet(this.first, this.second, this.third, this.fourth, this.five, this.six, that)
