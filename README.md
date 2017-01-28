@@ -14,13 +14,15 @@ Guild offers you tuple classes from two to four elements.
  * A tuple of five elements.
 * [Sextet](https://github.com/operando/Guild/blob/master/guild/src/main/java/com/os/operando/guild/Sextet.java)
  * A tuple of six elements.
+* [Septet](https://github.com/operando/Guild/blob/master/guild/src/main/java/com/os/operando/guild/Septet.java)
+ * A tuple of seven elements.
 
 ## Download
 
-[![Download](https://api.bintray.com/packages/operandoos/maven/guild/images/download.svg?version=1.3.0) ](https://bintray.com/operandoos/maven/guild/1.3.0/link) or grab via Gradle:
+[![Download](https://api.bintray.com/packages/operandoos/maven/guild/images/download.svg?version=1.4.0) ](https://bintray.com/operandoos/maven/guild/1.4.0/link) or grab via Gradle:
 
 ```gradle
-compile 'com.os.operando.guild:guild:1.3.0'
+compile 'com.os.operando.guild:guild:1.4.0'
 ```
 
 or Maven:
@@ -29,7 +31,7 @@ or Maven:
 <dependency>
   <groupId>com.os.operando.guild</groupId>
   <artifactId>guild</artifactId>
-  <version>1.3.0</version>
+  <version>1.4.0</version>
 </dependency>
 ```
 
@@ -84,6 +86,20 @@ System.out.println(sextet.getThird());
 System.out.println(sextet.getFourth());
 System.out.println(sextet.getFive());
 System.out.println(sextet.getSix());
+```
+
+### Septet
+
+```java
+Septet<String, Integer, Boolean, LocalDate, List<String>, Set<String>, Long> septet =
+        Septet.create("septet", 0, false, LocalDate.now(), Arrays.asList("septet"), Collections.singleton("septet"), Long.MAX_VALUE);
+System.out.println(septet.getFirst());
+System.out.println(septet.getSecond());
+System.out.println(septet.getThird());
+System.out.println(septet.getFourth());
+System.out.println(septet.getFive());
+System.out.println(septet.getSix());
+System.out.println(septet.getSeven());
 ```
 
 ## Future
