@@ -62,4 +62,17 @@ public class Septet<F, S, T, FO, FI, SI, SE> {
     public SE getSeven() {
         return seven;
     }
+
+    @Override
+    public String toString() {
+        return "Septet{" +
+                "first=" + first +
+                ", second=" + second +
+                ", third=" + third +
+                ", fourth=" + fourth +
+                ", five=" + five +
+                ", six=" + six +
+                ", seven=" + seven +
+                '}';
+    }
 }

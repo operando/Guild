@@ -55,4 +55,16 @@ public class Sextet<F, S, T, FO, FI, SI> {
     public SI getSix() {
         return six;
     }
+
+    @Override
+    public String toString() {
+        return "Sextet{" +
+                "first=" + first +
+                ", second=" + second +
+                ", third=" + third +
+                ", fourth=" + fourth +
+                ", five=" + five +
+                ", six=" + six +
+                '}';
+    }
 }

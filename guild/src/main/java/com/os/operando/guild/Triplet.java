@@ -34,4 +34,13 @@ public class Triplet<F, S, T> {
     public T getThird() {
         return third;
     }
+
+    @Override
+    public String toString() {
+        return "Triplet{" +
+                "first=" + first +
+                ", second=" + second +
+                ", third=" + third +
+                '}';
+    }
 }

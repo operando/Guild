@@ -48,4 +48,15 @@ public class Quintet<F, S, T, FO, FI> {
     public FI getFive() {
         return five;
     }
+
+    @Override
+    public String toString() {
+        return "Quintet{" +
+                "first=" + first +
+                ", second=" + second +
+                ", third=" + third +
+                ", fourth=" + fourth +
+                ", five=" + five +
+                '}';
+    }
 }

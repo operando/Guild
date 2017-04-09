@@ -41,4 +41,14 @@ public class Quartet<F, S, T, FO> {
     public FO getFourth() {
         return fourth;
     }
+
+    @Override
+    public String toString() {
+        return "Quartet{" +
+                "first=" + first +
+                ", second=" + second +
+                ", third=" + third +
+                ", fourth=" + fourth +
+                '}';
+    }
 }
