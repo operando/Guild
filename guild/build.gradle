@@ -31,7 +31,7 @@ dependencies {
 }
 
 group = 'com.os.operando.guild'
-version = '1.4.0'
+version = '1.5.0'
 
 def siteUrl = 'https://github.com/operando/Guild'
 def gitUrl = 'https://github.com/operando/Guild.git'
