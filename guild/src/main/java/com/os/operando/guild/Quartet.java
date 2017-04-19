@@ -51,4 +51,26 @@ public class Quartet<F, S, T, FO> {
                 ", fourth=" + fourth +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Quartet<?, ?, ?, ?> quartet = (Quartet<?, ?, ?, ?>) o;
+
+        if (first != null ? !first.equals(quartet.first) : quartet.first != null) return false;
+        if (second != null ? !second.equals(quartet.second) : quartet.second != null) return false;
+        if (third != null ? !third.equals(quartet.third) : quartet.third != null) return false;
+        return fourth != null ? fourth.equals(quartet.fourth) : quartet.fourth == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = first != null ? first.hashCode() : 0;
+        result = 31 * result + (second != null ? second.hashCode() : 0);
+        result = 31 * result + (third != null ? third.hashCode() : 0);
+        result = 31 * result + (fourth != null ? fourth.hashCode() : 0);
+        return result;
+    }
 }

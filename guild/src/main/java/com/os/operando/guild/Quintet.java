@@ -59,4 +59,28 @@ public class Quintet<F, S, T, FO, FI> {
                 ", five=" + five +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Quintet<?, ?, ?, ?, ?> quintet = (Quintet<?, ?, ?, ?, ?>) o;
+
+        if (first != null ? !first.equals(quintet.first) : quintet.first != null) return false;
+        if (second != null ? !second.equals(quintet.second) : quintet.second != null) return false;
+        if (third != null ? !third.equals(quintet.third) : quintet.third != null) return false;
+        if (fourth != null ? !fourth.equals(quintet.fourth) : quintet.fourth != null) return false;
+        return five != null ? five.equals(quintet.five) : quintet.five == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = first != null ? first.hashCode() : 0;
+        result = 31 * result + (second != null ? second.hashCode() : 0);
+        result = 31 * result + (third != null ? third.hashCode() : 0);
+        result = 31 * result + (fourth != null ? fourth.hashCode() : 0);
+        result = 31 * result + (five != null ? five.hashCode() : 0);
+        return result;
+    }
 }

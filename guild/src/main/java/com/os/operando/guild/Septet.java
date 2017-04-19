@@ -75,4 +75,32 @@ public class Septet<F, S, T, FO, FI, SI, SE> {
                 ", seven=" + seven +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Septet<?, ?, ?, ?, ?, ?, ?> septet = (Septet<?, ?, ?, ?, ?, ?, ?>) o;
+
+        if (first != null ? !first.equals(septet.first) : septet.first != null) return false;
+        if (second != null ? !second.equals(septet.second) : septet.second != null) return false;
+        if (third != null ? !third.equals(septet.third) : septet.third != null) return false;
+        if (fourth != null ? !fourth.equals(septet.fourth) : septet.fourth != null) return false;
+        if (five != null ? !five.equals(septet.five) : septet.five != null) return false;
+        if (six != null ? !six.equals(septet.six) : septet.six != null) return false;
+        return seven != null ? seven.equals(septet.seven) : septet.seven == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = first != null ? first.hashCode() : 0;
+        result = 31 * result + (second != null ? second.hashCode() : 0);
+        result = 31 * result + (third != null ? third.hashCode() : 0);
+        result = 31 * result + (fourth != null ? fourth.hashCode() : 0);
+        result = 31 * result + (five != null ? five.hashCode() : 0);
+        result = 31 * result + (six != null ? six.hashCode() : 0);
+        result = 31 * result + (seven != null ? seven.hashCode() : 0);
+        return result;
+    }
 }
