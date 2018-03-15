@@ -16,6 +16,10 @@ Guild offers you tuple classes from two to seven elements.
  * A tuple of six elements.
 * [Septet](https://github.com/operando/Guild/blob/master/guild/src/main/java/com/os/operando/guild/Septet.java)
  * A tuple of seven elements.
+* [Octet](https://github.com/operando/Guild/blob/master/guild/src/main/java/com/os/operando/guild/Octet.java)
+ * A tuple of eight elements.
+* [Ennead](https://github.com/operando/Guild/blob/master/guild/src/main/java/com/os/operando/guild/Ennead.java)
+ * A tuple of nine elements.
 
 ## Download
 
@@ -100,6 +104,37 @@ System.out.println(septet.getFourth());
 System.out.println(septet.getFive());
 System.out.println(septet.getSix());
 System.out.println(septet.getSeven());
+```
+
+### Octet
+
+```java
+Octet<String, Integer, Boolean, LocalDate, List<String>, Set<String>, Long, UUID> octet =
+        Octet.create("octet", 0, false, LocalDate.now(), Arrays.asList("octet"), Collections.singleton("octet"), Long.MAX_VALUE, UUID.randomUUID());
+System.out.println(octet.getFirst());
+System.out.println(octet.getSecond());
+System.out.println(octet.getThird());
+System.out.println(octet.getFourth());
+System.out.println(octet.getFive());
+System.out.println(octet.getSix());
+System.out.println(octet.getSeven());
+System.out.println(octet.getEight());
+```
+
+### Ennead
+
+```java
+Ennead<String, Integer, Boolean, LocalDate, List<String>, Set<String>, Long, UUID, StringBuilder> ennead =
+        Ennead.create("ennead", 0, false, LocalDate.now(), Arrays.asList("ennead"), Collections.singleton("ennead"), Long.MAX_VALUE, UUID.randomUUID(), new StringBuilder("ennead"));
+System.out.println(ennead.getFirst());
+System.out.println(ennead.getSecond());
+System.out.println(ennead.getThird());
+System.out.println(ennead.getFourth());
+System.out.println(ennead.getFive());
+System.out.println(ennead.getSix());
+System.out.println(ennead.getSeven());
+System.out.println(ennead.getEight());
+System.out.println(ennead.getNine());
 ```
 
 ## Future
