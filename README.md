@@ -19,10 +19,10 @@ Guild offers you tuple classes from two to seven elements.
 
 ## Download
 
-[![Download](https://api.bintray.com/packages/operandoos/maven/guild/images/download.svg?version=1.5.0) ](https://bintray.com/operandoos/maven/guild/1.5.0/link) or grab via Gradle:
+[![Download](https://api.bintray.com/packages/operandoos/maven/guild/images/download.svg?version=1.6.0) ](https://bintray.com/operandoos/maven/guild/1.6.0/link) or grab via Gradle:
 
 ```gradle
-compile 'com.os.operando.guild:guild:1.5.0'
+compile 'com.os.operando.guild:guild:1.6.0'
 ```
 
 or Maven:
@@ -31,7 +31,7 @@ or Maven:
 <dependency>
   <groupId>com.os.operando.guild</groupId>
   <artifactId>guild</artifactId>
-  <version>1.5.0</version>
+  <version>1.6.0</version>
 </dependency>
 ```
 
@@ -113,7 +113,7 @@ The class name is expected to be the same as the [javatuples](http://www.javatup
 ```
 Apache Version 2.0
 
-Copyright (C) 2016 Shinobu Okano
+Copyright (C) 2018 Shinobu Okano
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
