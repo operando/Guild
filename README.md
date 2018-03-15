@@ -5,21 +5,21 @@ Simple java tuples.
 Guild offers you tuple classes from two to seven elements.
 
 * [Pair](https://github.com/operando/Guild/blob/master/guild/src/main/java/com/os/operando/guild/Pair.java)
- * A tuple of two elements.
+  * A tuple of two elements.
 * [Triplet](https://github.com/operando/Guild/blob/master/guild/src/main/java/com/os/operando/guild/Triplet.java)
- * A tuple of three elements.
+  * A tuple of three elements.
 * [Quartet](https://github.com/operando/Guild/blob/master/guild/src/main/java/com/os/operando/guild/Quartet.java)
- * A tuple of four elements.
+  * A tuple of four elements.
 * [Quintet](https://github.com/operando/Guild/blob/master/guild/src/main/java/com/os/operando/guild/Quintet.java)
- * A tuple of five elements.
+  * A tuple of five elements.
 * [Sextet](https://github.com/operando/Guild/blob/master/guild/src/main/java/com/os/operando/guild/Sextet.java)
- * A tuple of six elements.
+  * A tuple of six elements.
 * [Septet](https://github.com/operando/Guild/blob/master/guild/src/main/java/com/os/operando/guild/Septet.java)
- * A tuple of seven elements.
+  * A tuple of seven elements.
 * [Octet](https://github.com/operando/Guild/blob/master/guild/src/main/java/com/os/operando/guild/Octet.java)
- * A tuple of eight elements.
+  * A tuple of eight elements.
 * [Ennead](https://github.com/operando/Guild/blob/master/guild/src/main/java/com/os/operando/guild/Ennead.java)
- * A tuple of nine elements.
+  * A tuple of nine elements.
 
 ## Download
 
