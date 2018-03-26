@@ -2,6 +2,7 @@ package com.os.operando.guild.sample
 
 import com.os.operando.guild.to
 import java.time.LocalDateTime
+import java.util.*
 
 fun main(args: Array<String>) {
     val pair = 1 to "pair"
@@ -42,4 +43,25 @@ fun main(args: Array<String>) {
     println(septet.five)
     println(septet.six)
     println(septet.seven)
+
+    val qctet = 1 to 10L to true to LocalDateTime.now() to "septet" to listOf("septet") to Long.MAX_VALUE to 1.0
+    println(qctet.first)
+    println(qctet.second)
+    println(qctet.third)
+    println(qctet.fourth)
+    println(qctet.five)
+    println(qctet.six)
+    println(qctet.seven)
+    println(qctet.eight)
+
+    val ennead = 1 to 10L to true to LocalDateTime.now() to "septet" to listOf("septet") to Long.MAX_VALUE to 1.0 to UUID.randomUUID()
+    println(ennead.first)
+    println(ennead.second)
+    println(ennead.third)
+    println(ennead.fourth)
+    println(ennead.five)
+    println(ennead.six)
+    println(ennead.seven)
+    println(ennead.eight)
+    println(ennead.nine)
 }
