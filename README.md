@@ -2,7 +2,7 @@
 
 Simple java tuples.
 
-Guild offers you tuple classes from two to seven elements.
+Guild offers you tuple classes from two to nine elements.
 
 * [Pair](https://github.com/operando/Guild/blob/master/guild/src/main/java/com/os/operando/guild/Pair.java)
   * A tuple of two elements.
