@@ -2,6 +2,7 @@ package com.os.operando.guild.sample
 
 import com.os.operando.guild.kt.Quintet
 import com.os.operando.guild.kt.to
+import com.os.operando.guild.kt.toList
 import java.time.LocalDateTime
 import java.util.*
 
@@ -52,7 +53,7 @@ fun main(args: Array<String>) {
     println(septet.six)
     println(septet.seven)
 
-    val qctet = 1 to 10L to true to LocalDateTime.now() to "septet" to listOf("septet") to Long.MAX_VALUE to 1.0
+    val qctet = 1 to 10L to true to LocalDateTime.now() to "qctet" to listOf("qctet") to Long.MAX_VALUE to 1.0
     println(qctet.first)
     println(qctet.second)
     println(qctet.third)
@@ -62,7 +63,7 @@ fun main(args: Array<String>) {
     println(qctet.seven)
     println(qctet.eight)
 
-    val ennead = 1 to 10L to true to LocalDateTime.now() to "septet" to listOf("septet") to Long.MAX_VALUE to 1.0 to UUID.randomUUID()
+    val ennead = 1 to 10L to true to LocalDateTime.now() to "ennead" to listOf("ennead") to Long.MAX_VALUE to 1.0 to UUID.randomUUID()
     println(ennead.first)
     println(ennead.second)
     println(ennead.third)
