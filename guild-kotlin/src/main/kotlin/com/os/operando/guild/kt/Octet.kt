@@ -1,5 +1,7 @@
 package com.os.operando.guild.kt
 
+import java.io.Serializable
+
 /**
  * A tuple of eight elements.
  *
@@ -28,8 +30,11 @@ data class Octet<out F, out S, out T, out FO, out FI, out SI, out SE, out E>(
         val five: FI,
         val six: SI,
         val seven: SE,
-        val eight: E) {
+        val eight: E) : Serializable {
+    override fun toString(): String = "($first, $second, $third, $fourth, $five, $six, $seven, $eight)"
 }
 
 infix fun <A, B, C, D, E, F, G, H, I> Octet<A, B, C, D, E, F, G, H>.to(that: I): Ennead<A, B, C, D, E, F, G, H, I>
         = Ennead(this.first, this.second, this.third, this.fourth, this.five, this.six, this.seven, this.eight, that)
+
+fun <T> Octet<T, T, T, T, T, T, T, T>.toList(): List<T> = listOf(first, second, third, fourth, five, six, seven, eight)

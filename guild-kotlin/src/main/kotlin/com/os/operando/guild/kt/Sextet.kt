@@ -1,5 +1,7 @@
 package com.os.operando.guild.kt
 
+import java.io.Serializable
+
 /**
  * A tuple of six elements.
  *
@@ -22,8 +24,11 @@ data class Sextet<out F, out S, out T, out FO, out FI, out SI>(
         val third: T,
         val fourth: FO,
         val five: FI,
-        val six: SI) {
+        val six: SI) : Serializable {
+    override fun toString(): String = "($first, $second, $third, $fourth, $five, $six)"
 }
 
 infix fun <A, B, C, D, E, F, G> Sextet<A, B, C, D, E, F>.to(that: G): Septet<A, B, C, D, E, F, G>
         = Septet(this.first, this.second, this.third, this.fourth, this.five, this.six, that)
+
+fun <T> Sextet<T, T, T, T, T, T>.toList(): List<T> = listOf(first, second, third, fourth, five, six)

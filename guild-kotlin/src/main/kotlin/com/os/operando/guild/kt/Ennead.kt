@@ -1,5 +1,7 @@
 package com.os.operando.guild.kt
 
+import java.io.Serializable
+
 /**
  * A tuple of eight elements.
  *
@@ -31,5 +33,8 @@ data class Ennead<out F, out S, out T, out FO, out FI, out SI, out SE, out E, ou
         val six: SI,
         val seven: SE,
         val eight: E,
-        val nine: N) {
+        val nine: N) : Serializable {
+    override fun toString(): String = "($first, $second, $third, $fourth, $five, $six, $seven, $eight, $nine)"
 }
+
+fun <T> Ennead<T, T, T, T, T, T, T, T, T>.toList(): List<T> = listOf(first, second, third, fourth, five, six, seven, eight, nine)

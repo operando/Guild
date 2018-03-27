@@ -1,5 +1,7 @@
 package com.os.operando.guild.kt
 
+import java.io.Serializable
+
 /**
  * A tuple of seven elements.
  *
@@ -25,8 +27,11 @@ data class Septet<out F, out S, out T, out FO, out FI, out SI, out SE>(
         val fourth: FO,
         val five: FI,
         val six: SI,
-        val seven: SE) {
+        val seven: SE) : Serializable {
+    override fun toString(): String = "($first, $second, $third, $fourth, $five, $six, $seven)"
 }
 
 infix fun <A, B, C, D, E, F, G, H> Septet<A, B, C, D, E, F, G>.to(that: H): Octet<A, B, C, D, E, F, G, H>
         = Octet(this.first, this.second, this.third, this.fourth, this.five, this.six, this.seven, that)
+
+fun <T> Septet<T, T, T, T, T, T, T>.toList(): List<T> = listOf(first, second, third, fourth, five, six, seven)
