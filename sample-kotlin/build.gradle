@@ -32,8 +32,8 @@ sourceSets {
 }
 
 dependencies {
-//    compile project(':guild-kotlin')
-    compile 'com.os.operando.guild.kt:guild_kt:1.0.0'
+    compile project(':guild-kotlin')
+//    compile 'com.os.operando.guild.kt:guild_kt:1.0.0'
 
 }
 

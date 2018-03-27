@@ -1,0 +1,14 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/code
+    docker:
+      - image: circleci/openjdk:8u151-jdk
+    steps:
+      - checkout
+      - run:
+          name: Run assemble
+          command: ./gradlew assemble
+      - run:
+          name: Run Tests
+          command: ./gradlew test
