@@ -1,5 +1,6 @@
 package com.os.operando.guild.sample
 
+import com.os.operando.guild.kt.Quintet
 import com.os.operando.guild.kt.to
 import java.time.LocalDateTime
 import java.util.*
@@ -26,6 +27,13 @@ fun main(args: Array<String>) {
     println(quintet.third)
     println(quintet.fourth)
     println(quintet.five)
+
+    val quintet2: Quintet<Int, Long, String, LocalDateTime, String> = triple to LocalDateTime.now() to "quintet"
+    println(quintet2.first)
+    println(quintet2.second)
+    println(quintet2.third)
+    println(quintet2.fourth)
+    println(quintet2.five)
 
     val sextet = 1 to 10L to true to LocalDateTime.now() to "sextet" to listOf("sextet")
     println(sextet.first)
