@@ -6,6 +6,15 @@ jobs:
       - image: circleci/openjdk:8u151-jdk
     steps:
       - checkout
+      - restore_cache:
+          key: jars-{{ checksum "build.gradle" }}-{{ checksum  "guild/build.gradle" }}-{{ checksum  "guild-kotlun/build.gradle" }}-{{ checksum  "sample/build.gradle" }}-{{ checksum  "sample-kotlin/build.gradle" }}
+      - run:
+          name: Download Dependencies
+          command: ./gradlew dependencies
+      - save_cache:
+          paths:
+            - ~/.gradle
+          key: jars-{{ checksum "build.gradle" }}-{{ checksum  "guild/build.gradle" }}-{{ checksum  "guild-kotlun/build.gradle" }}-{{ checksum  "sample/build.gradle" }}-{{ checksum  "sample-kotlin/build.gradle" }}
       - run:
           name: Run assemble
           command: ./gradlew assemble
