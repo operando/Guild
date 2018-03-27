@@ -25,11 +25,108 @@ Pair and Triplet use kotlin standard library.
 
 ## Download
 
-* TODO
+[![Download](https://api.bintray.com/packages/operandoos/maven/guild_kt/images/download.svg?version=1.0.0) ](https://bintray.com/operandoos/maven/guild_kt/1.0.0/link) or grab via Gradle:
+
+```gradle
+compile 'com.os.operando.guild.kt:guild_kt:1.0.0'
+```
+
+or Maven:
+
+```
+<dependency>
+  <groupId>com.os.operando.guild.kt</groupId>
+  <artifactId>guild_kt</artifactId>
+  <version>1.0.0</version>
+  <type>pom</type>
+</dependency>
+```
 
 ## How to use
 
-* TODO
+### Triplet
+
+```kotlin
+val triple = 1 to 10L to "triple"
+println(triple.first)
+println(triple.second)
+println(triple.third)
+```
+
+### Quartet
+
+```kotlin
+val quartet = 1 to 10L to true to "quartet"
+println(quartet.first)
+println(quartet.second)
+println(quartet.third)
+println(quartet.fourth)
+```
+
+### Quintet
+
+```kotlin
+val quintet = 1 to 10L to true to LocalDateTime.now() to "quintet"
+println(quintet.first)
+println(quintet.second)
+println(quintet.third)
+println(quintet.fourth)
+println(quintet.five)
+```
+
+### Sextet
+
+```kotlin
+val sextet = 1 to 10L to true to LocalDateTime.now() to "sextet" to listOf("sextet")
+println(sextet.first)
+println(sextet.second)
+println(sextet.third)
+println(sextet.fourth)
+println(sextet.five)
+println(sextet.six)
+```
+
+### Septet
+
+```kotlin
+val septet = 1 to 10L to true to LocalDateTime.now() to "septet" to listOf("septet") to Long.MAX_VALUE
+println(septet.first)
+println(septet.second)
+println(septet.third)
+println(septet.fourth)
+println(septet.five)
+println(septet.six)
+println(septet.seven)
+```
+
+### Octet
+
+```kotlin
+val qctet = 1 to 10L to true to LocalDateTime.now() to "septet" to listOf("septet") to Long.MAX_VALUE to 1.0
+println(qctet.first)
+println(qctet.second)
+println(qctet.third)
+println(qctet.fourth)
+println(qctet.five)
+println(qctet.six)
+println(qctet.seven)
+println(qctet.eight)
+```
+
+### Ennead
+
+```kotlin
+val ennead = 1 to 10L to true to LocalDateTime.now() to "septet" to listOf("septet") to Long.MAX_VALUE to 1.0 to UUID.randomUUID()
+println(ennead.first)
+println(ennead.second)
+println(ennead.third)
+println(ennead.fourth)
+println(ennead.five)
+println(ennead.six)
+println(ennead.seven)
+println(ennead.eight)
+println(ennead.nine)
+```
 
 ### License
 
